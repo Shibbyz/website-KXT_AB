@@ -1,0 +1,6 @@
+
+{
+  "name":"realestate-site-v3",
+  "private":true,
+  "dependencies":{"nodemailer":"^6.9.13"}
+}
