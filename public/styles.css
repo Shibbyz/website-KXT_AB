@@ -1,19 +1,108 @@
+/* --- Global styles --- */
+body{
+  margin:0; /* remove default browser margin */
+  font-family:system-ui; /* use system UI font for clean look */
+  background:#0f1113; /* dark background color */
+  color:#e6e6e6; /* light text color */
+}
 
-body{margin:0;font-family:system-ui;background:#0f1113;color:#e6e6e6}
-header{padding:24px 48px;border-bottom:1px solid #222}
-nav{display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap}
-nav a{color:#e6e6e6;margin-left:24px;text-decoration:none;font-size:14px}
-.hero{background:url('assets/hero.svg') center/cover;height:70vh;display:flex;align-items:center}
-.hero div{max-width:700px;padding:48px}
-section{padding:80px 48px;max-width:1100px;margin:auto}
-.grid{display:grid;grid-template-columns:repeat(3,1fr);gap:32px}
-.card{border:1px solid #222;padding:32px}
-footer{padding:48px;border-top:1px solid #222;text-align:center;font-size:13px;color:#777}
-input,textarea,button{width:100%;margin-top:12px;padding:12px;background:#111;border:1px solid #333;color:#fff}
-button{cursor:pointer}
+/* --- Header and navigation --- */
+header{
+  padding:24px 48px; /* spacing inside header */
+  border-bottom:1px solid #222; /* subtle bottom border */
+}
+
+nav{
+  display:flex; /* use flexbox for layout */
+  justify-content:space-between; /* push content to edges */
+  align-items:center; /* vertically center items */
+  flex-wrap:wrap; /* allow wrapping on smaller screens */
+}
+
+nav a{
+  color:#e6e6e6; /* link color */
+  margin-left:24px; /* spacing between links */
+  text-decoration:none; /* remove underline */
+  font-size:14px; /* small font size */
+}
+
+/* --- Hero section --- */
+.hero{
+  background:url('assets/modern-tall-glass-buildings-downtown.jpg') center/cover; /* background image centered and covers area */
+  height:70vh; /* take 70% of viewport height */
+  display:flex; /* flex to vertically align inner content */
+  align-items:center; /* center vertically */
+}
+
+.hero div{
+  max-width:700px; /* constrain text width */
+  padding:48px; /* internal padding */
+}
+
+/* --- General sections --- */
+section{
+  padding:80px 48px; /* vertical + horizontal padding */
+  max-width:1100px; /* max content width */
+  margin:auto; /* center horizontally */
+}
+
+/* --- Grid layout --- */
+.grid{
+  display:grid; /* CSS grid for cards */
+  grid-template-columns:repeat(3,1fr); /* 3 equal columns */
+  gap:32px; /* spacing between grid items */
+}
+
+.card{
+  border:1px solid #222; /* subtle border around card */
+  padding:32px; /* internal spacing */
+}
+
+/* --- Footer --- */
+footer{
+  padding:48px; /* spacing inside footer */
+  border-top:1px solid #222; /* top border to separate from content */
+  text-align:center; /* center text */
+  font-size:13px; /* small font for footer */
+  color:#777; /* muted color for footer text */
+}
+
+/* --- Forms (inputs, textarea, buttons) --- */
+input,textarea,button{
+  width:100%; /* full width of container */
+  margin-top:12px; /* spacing above element */
+  padding:12px; /* internal padding */
+  background:#111; /* dark input background */
+  border:1px solid #333; /* subtle border */
+  color:#fff; /* text color */
+}
+
+button{
+  cursor:pointer; /* pointer cursor on hover */
+}
+
+form button {
+  width: auto;       /* ta bort 100%-bredden, så knappen blir så stor som texten */
+  padding: 8px 16px; /* justera höjd och bredd */
+}
+
+/* --- Responsive adjustments --- */
 @media (max-width:768px){
-  .grid{grid-template-columns:1fr;gap:24px}
-  header, section, .hero div{padding:24px}
-  nav{flex-direction:column;align-items:flex-start}
-  nav a{margin:12px 0 0 0}
+  .grid{
+    grid-template-columns:1fr; /* single column on small screens */
+    gap:24px; /* smaller gap for mobile */
+  }
+  
+  header, section, .hero div{
+    padding:24px; /* reduce padding on smaller screens */
+  }
+  
+  nav{
+    flex-direction:column; /* stack nav items vertically */
+    align-items:flex-start; /* align to left */
+  }
+  
+  nav a{
+    margin:12px 0 0 0; /* vertical spacing between links in stacked nav */
+  }
 }
