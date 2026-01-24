@@ -42,35 +42,40 @@ body {
 }
 
 .logo {
-	font-size: 1.8rem;
-	font-weight: 700;
-	background: linear-gradient(135deg, #475569, #64748b);
-	-webkit-background-clip: text;
-	-webkit-text-fill-color: transparent;
-	background-clip: text;
-	display: flex;
-	align-items: center;
-	gap: 0.8rem;
-	text-decoration: none;
-	transition: all 0.3s ease;
-}
-
-.logo:hover {
-	transform: scale(1.05);
+    font-size: 1.8rem;
+    font-weight: 600;
+    background: linear-gradient(135deg, #475569, #64748b);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    display: flex;
+    align-items: center;
+    gap: 0.8rem;
+    text-decoration: none;
+    /* Ingen scaling på hela containern */
 }
 
 .logo-icon {
-	width: 32px;
-	height: 32px;
-	background: linear-gradient(135deg, #475569, #64748b);
-	border-radius: 8px;
-	display: flex;
-	align-items: center;
-	justify-content: center;
-	color: white;
-	font-size: 1rem;
-	flex-shrink: 0;
+    width: 60px;
+    height: 60px;
+    background: url('images/logo_no_background.png') no-repeat center/contain;
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: transparent;
+    font-size: 1rem;
+    flex-shrink: 0;
+    transition: transform 0.3s ease;
+    will-change: transform;
 }
+
+/* Skala ENDAST logotypen på hover */
+.logo:hover .logo-icon {
+    transform: scale(1.05);
+}
+
+
 
 .nav-links {
 	display: flex;

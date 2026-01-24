@@ -72,16 +72,16 @@ document.addEventListener('DOMContentLoaded', () => {
    if (headline && paragraph) {
       // Define the 3 sets of text you want to rotate
       const textSets = [{
-            h1: "Strategic Excellence<br>Redefined",
-            p: "We architect transformative business strategies that transcend conventional thinking and deliver extraordinary results."
+            h1: "Real Estate<br>Expertise",
+            p: "We deliver high-confidence real estate advisory built on deep market knowledge, trusted relationships, and decades of transactional experience in Stockholm."
          },
          {
-            h1: "Innovation That<br>Drives Growth",
-            p: "Our team harnesses cutting-edge technology and creative insights to build market leaders and unlock new opportunities."
+            h1: "Insight That<br>Creates Value",
+            p: "Our work is driven by precise market understanding, strong networks, and a commitment to quality that ensures optimal outcomes in every transaction."
          },
          {
-            h1: "Your Vision<br>Engineered",
-            p: "We partner with you to turn ambitious goals into measurable, real-world results that create lasting competitive advantages."
+            h1: "Your Interests<br>Secured",
+            p: "We guide you through acquisitions, sales, and strategic decisions with clarity, discretion, and a relentless focus on long-term value creation."
          }
       ];
 
