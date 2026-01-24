@@ -1,6 +1,6 @@
 
 {
-  "name":"realestate-site-v3",
+  "name":"website-KXT_AB",
   "private":true,
   "dependencies":{"nodemailer":"^6.9.13"}
 }
