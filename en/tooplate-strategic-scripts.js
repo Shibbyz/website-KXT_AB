@@ -69,22 +69,21 @@ document.addEventListener('DOMContentLoaded', () => {
    const headline = document.getElementById('hero-headline');
    const paragraph = document.getElementById('hero-paragraph');
 
-if (headline && paragraph) {
-  // Definiera de 3 textset som ska rotera
-  const textSets = [{
-        h1: "KUNSKAP, KVALITET<br>OCH KONTAKTER",
-        p: "Välkommen till vårt företag – där kunskap, kvalitet och kontakter möts under samma tak. Med förmodligen mest erfarenhet av fastighetsaffärer i Stockholm erbjuder vi en trygg och professionell partner genom hela processen."
-     },
-     {
-        h1: "Insikt som<br>skapar värde",
-        p: "Vårt arbete drivs av djup marknadskännedom, starka nätverk och ett kompromisslöst fokus på kvalitet som säkerställer optimala resultat i varje transaktion."
-     },
-     {
-        h1: "Dina intressen<br>är skyddade",
-        p: "Vi guidar dig genom köp, försäljning och strategiska beslut med tydlighet, diskretion och ett konsekvent fokus på långsiktigt värdeskapande."
-     }
-  ];
-
+   if (headline && paragraph) {
+      // Define the 3 sets of text you want to rotate
+      const textSets = [{
+            h1: "Real Estate<br>Expertise",
+            p: "We deliver high-confidence real estate advisory built on deep market knowledge, trusted relationships, and decades of transactional experience in Stockholm."
+         },
+         {
+            h1: "Insight That<br>Creates Value",
+            p: "Our work is driven by precise market understanding, strong networks, and a commitment to quality that ensures optimal outcomes in every transaction."
+         },
+         {
+            h1: "Your Interests<br>Secured",
+            p: "We guide you through acquisitions, sales, and strategic decisions with clarity, discretion, and a relentless focus on long-term value creation."
+         }
+      ];
 
       let currentIndex = 0;
 
