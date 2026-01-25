@@ -1414,3 +1414,41 @@ body {
 .footer-design a:hover {
 	color: #64748b;
 }
+
+@media (max-width: 768px) {
+
+	.about {
+		grid-template-columns: 1fr;
+		gap: 2rem;
+	}
+
+	.about-content {
+		padding: 2rem 1.75rem;
+		border-radius: 20px;
+	}
+
+	.about-content::before {
+		left: -1rem;
+	}
+
+	.about-content h2 {
+		font-size: 2rem;
+		margin-bottom: 1.5rem;
+	}
+
+	.about-content .highlight {
+		font-size: 1.1rem;
+		margin-bottom: 1.5rem;
+	}
+
+	.about-content p {
+		font-size: 1rem;
+		line-height: 1.7;
+	}
+
+	.about-features {
+		grid-template-columns: 1fr;
+		gap: 1rem;
+		margin: 2rem 0;
+	}
+}
