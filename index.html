@@ -394,17 +394,19 @@
                 Whether you are considering a transaction, seeking advice, or exploring opportunities,
                 we are ready to assist.
             </p>
-            <form class="contact-form fade-in">
+            
+            <form class="contact-form fade-in" id="contact-form">
                 <div class="form-group">
-                    <input type="text" placeholder="First Name" required>
-                    <input type="text" placeholder="Last Name" required>
+                    <input type="text" name="firstName" placeholder="First Name" required>
+                    <input type="text" name="lastName" placeholder="Last Name" required>
                 </div>
                 <div class="form-group">
-                    <input type="email" placeholder="Email Address" required>
-                    <input type="tel" placeholder="Phone Number">
+                    <input type="email" name="email" placeholder="Email Address" required>
+                    <input type="tel" name="phone" placeholder="Phone Number">
                 </div>
-                <textarea placeholder="How can we assist you?" required></textarea>
-                <button type="submit" class="submit-btn">Contact Us</button>
+                <input type="text" name="organization" placeholder="Organization Name">
+                <textarea name="message" placeholder="Describe your strategic vision and transformation goals..." required></textarea>
+                <button type="submit" class="submit-btn">Launch Strategic Partnership</button>
             </form>
         </div>
     </div>
@@ -426,6 +428,7 @@
     </div>
 </footer>
 
+<script src="frontend.js" type="module"></script>
 <script src="tooplate-strategic-scripts.js"></script>
 </body>
 </html>
