@@ -72,7 +72,7 @@ document.addEventListener('DOMContentLoaded', () => {
 if (headline && paragraph) {
   // Definiera de 3 textset som ska rotera
   const textSets = [{
-        h1: "KUNSKAP, KVALITET<br>OCH KONTAKTER",
+        h1: "Kunskap, kvalitet<br>och kontakter",
         p: "Välkommen till vårt företag – där kunskap, kvalitet och kontakter möts under samma tak. Med förmodligen mest erfarenhet av fastighetsaffärer i Stockholm erbjuder vi en trygg och professionell partner genom hela processen."
      },
      {
@@ -216,12 +216,12 @@ contactForm.addEventListener('submit', (e) => {
    const submitBtn = contactForm.querySelector('.submit-btn');
    const originalText = submitBtn.textContent;
 
-   submitBtn.textContent = 'Initiating Connection...';
+   submitBtn.textContent = 'Skickar meddelande...';
    submitBtn.style.background = 'linear-gradient(135deg, #10b981, #059669)';
    submitBtn.classList.add('loading');
 
    setTimeout(() => {
-      submitBtn.textContent = 'Partnership Initiated!';
+      submitBtn.textContent = 'Meddelande skickat!';
       submitBtn.classList.remove('loading');
       setTimeout(() => {
          submitBtn.textContent = originalText;
