@@ -27,7 +27,7 @@ body {
 	top: 0;
 	width: 100%;
 	background: #FFFFFF;
-	padding: 1.5rem 5%;
+	padding: 1.25rem 5%;
 	z-index: 1000;
 	transition: all 0.3s ease;
 	border-bottom: 1px solid rgba(71, 85, 105, 0.1);
@@ -56,8 +56,8 @@ body {
 }
 
 .logo-icon {
-    width: 60px;
-    height: 60px;
+    width: 75px;
+    height: 75px;
     background: url('images/logo_no_background.png') no-repeat center/contain;
     border-radius: 8px;
     display: flex;
@@ -72,7 +72,7 @@ body {
 
 /* Skala ENDAST logotypen på hover */
 .logo:hover .logo-icon {
-    transform: scale(1.05);
+    transform: scale(1.17);
 }
 
 
