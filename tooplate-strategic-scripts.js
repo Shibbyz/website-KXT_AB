@@ -110,7 +110,7 @@ if (headline && paragraph) {
       }
 
       // Set the interval for text rotation (e.g., every 5 seconds)
-      setInterval(changeText, 5000);
+      setInterval(changeText, 10000);
    }
 });
 
